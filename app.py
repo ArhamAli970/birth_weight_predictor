@@ -32,7 +32,7 @@ def pred_model():
     df=pd.DataFrame(dt_ext)
 
     # load pickel file
-    with open("model/model.pkl",'rb') as f:
+    with open("model.pkl",'rb') as f:
         od=pickle.load(f)
     
     ans=od.predict(df)
